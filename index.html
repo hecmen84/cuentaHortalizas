@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+    <title>Cuenta las hortalizas</title>
+</head>
+<body>
+    <div class="game-start animate__animated animate__fadeInUp">
+        <div>
+            <img src="radish2.png" alt="">
+            <img src="lettuce.png" alt="">
+            <img src="radish2.png" alt="">
+        </div>
+        <h1>Ayuda al conejo a contar las hortalizas que tiene en su huerto</h1>
+        <p>Tendrás 10 intentos en un minuto</p>
+        <button id='start-btn'>Vamos a jugar</button>
+    </div>
+    <div class="hidden end-game-container animate__animated animate__fadeInDown ">
+    <div class="end-game">
+        <img src="carrots.svg" alt="" width=20%>
+        <h1>El juega ha finalizado</h1>
+        <h2>Puntuación</h2>
+        <div class="points">
+            <div class="correct-points">Correctas: <span id="correct-points">0</span> </div>
+            <div class="wrong-points"> Euivocadas: <span id="wrong-points">0</span> </div>
+        </div>
+        <div class="btn-container">
+        <input type="submit" id='reload-game' value="Volver a jugar">
+        <button>Salir del juego</button>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <div class="confetti hidden" id='confetti'>
+            <img src="confetti.gif" width="50%" alt="" srcset="">
+        </div>
+        <h1>¿Cuántas hortalizas puedes contar?</h1>
+        <div class="dash-container">
+        <div class="dash">
+            <div class="question"></div>
+            <div class="wrong"></div>
+            <div class="correct"></div>
+        </div>
+        <div class="progress-bar">
+            <div class="progress-done" data-done="70"></div>
+        </div>
+        </div>
+        <div class="soil-carrot">
+            
+        </div>
+        <div class="soil-lettuce">
+            
+            </div>
+        <div class="soil-radish">
+            
+        </div>    
+        <h2>Escribe la respuesta</h2>
+        <div class="answer-container">
+            <input type="text" name="" id="answer">
+            <button id='answer-btn'>Comprobar</button>
+        </div>
+        <div class="rabbit" id='rabbit'>
+            <img src="rabbit.png" alt="">
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+</body>
+</html>
